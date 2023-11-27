@@ -9,7 +9,8 @@ const sequelize = new Sequelize(
     dialect: "mssql",
     dialectOptions: {
       options: {
-        encrypt: true,
+        encrypt: false,
+        enableArithAbort: false,
       },
     },
     logging: false,
